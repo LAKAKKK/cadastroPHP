@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+    <div class="navbar navbar-light bg-light menu">
+        <a class="navbar-brand" href="#">CRUD PHP</a>
+    </div>
+    <div>
+        <form>
+            <table width="625" border="0">
+                <tr>
+                    <td width="69"> Nome:</td>
+                    <td width="69"><input name="nome" type="text" id="nome" size="70" maxlength="60"/>
+                </tr>
+
+                <tr>
+                    <td width="69"> Email:</td>
+                    <td width="69"><input name="email" type="text" id="email" size="70" maxlength="60"/>
+                </tr>
+
+                <tr>
+                    <td width="69"> Sexo:</td>
+                    <td width="69"><input name="sexo" type="radio" value="Masculino" checked="checked"/>
+                        Masculino
+                        <input name="sexo" type="radio" value="Feminino" checked="checked"/>
+                        Feminino
+                </tr>
+
+                <tr>
+                    <td width="69"> DDD:</td>
+                    <td width="69"><input name="ddd" type="number" id="ddd" size="4" maxlength="2"/>
+                        Telefone:
+                        <input name="telefone" type="number" id="telefone">
+                </tr>
+
+                <tr>
+                    <td> Endereço:</td>
+                    <td width="69"><input name="endereco" type="text" id="endereco" size="70" maxlength="60"/>
+                        <td><span>*</span>
+                </tr>
+
+                <tr>
+                    <td> Cidade:</td>
+                    <td><input name="cidade" type="text" id="cidade" size="70" maxlength="60"/>
+                        <td><span>*</span>
+                </tr>
+
+                <tr>
+                    <td> Estado:</td>
+                    <td><select name="estado" id="estado">
+                        <option value="DF">DF</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        </select>
+                </td>
+                </tr>
+
+                <tr>
+                    <td>Bairro:</td>
+                    <td><input name="bairro" type="text" id="bairro" maxlength="20"/>
+                    
+                </tr>
+
+                <tr>
+                    <td>País:</td>
+                    <td><input name="pais" type="text" id="pais" maxlength="20"/>
+                        
+                </tr>
+                <tr>
+                    <td>Loguinho:</td>
+                    <td><input name="login" type="text" id="login" maxlength="12"/>
+                        <td><span>*</span>
+                </tr>
+                
+                <tr>
+                    <td>Senha:</td>
+                    <td><input name="senha" type="password" id="senha" maxlength="12"/>
+                        <td><span>*</span>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input name="news" type="checkbox" id="news" value="ATIVO" checked="checked"/>
+                        Desejo receber novidades e informações sobre o conteúdo deste site
+                </tr>
+
+              
+            </table>
+            
+            <div>
+                <button type="button" class="btn btn-primary" name="cadastrar">Cadastrar</button>
+            
+            </div>
+
+
+        </form>
+    </div>
+
+    
+</body>
+</html>
